@@ -1,0 +1,13 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "485485",
+    "database": "crud_api",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "use_env_variable": "DATABASE_URL",
+    "dialect": "postgres"
+  }
+}
