@@ -1,0 +1,29 @@
+{
+  "name": "projeto-root",
+  "version": "1.0.0",
+  "description": "Sistema de Cadastro de Alunos - Full Stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "react",
+    "vite",
+    "postgresql",
+    "supabase"
+  ],
+  "author": "Clodomilson Silva",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
