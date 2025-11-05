@@ -1,294 +1,585 @@
-# 📚 Sistema de Cadastro de Alunos - Full Stack# 📚 Sistema de Cadastro de Alunos - API REST
+# 📦 Sistema de Gerenciamento de Items - Full Stack# 📚 Sistema de Cadastro de Alunos - Full Stack# 📚 Sistema de Cadastro de Alunos - API REST
 
 
 
-Sistema completo de gerenciamento de cadastro de alunos com backend em Node.js e frontend em React, integrado ao Supabase com PostgreSQL.Backend de uma API REST desenvolvida com Node.js para gerenciamento de cadastro de alunos (CRUD), conectada ao Supabase com PostgreSQL.
+Sistema completo de gerenciamento de items (CRUD) com backend em Node.js e frontend em React, integrado ao Supabase com PostgreSQL.
 
 
 
-## 🚀 Sobre o Projeto## 🚀 Sobre o Projeto
+## 🚀 Sobre o ProjetoSistema completo de gerenciamento de cadastro de alunos com backend em Node.js e frontend em React, integrado ao Supabase com PostgreSQL.Backend de uma API REST desenvolvida com Node.js para gerenciamento de cadastro de alunos (CRUD), conectada ao Supabase com PostgreSQL.
 
 
 
-Este é um projeto Full Stack que implementa um sistema de cadastro de alunos (CRUD) com:Este projeto é uma API RESTful para gerenciamento de cadastro de alunos, desenvolvida com Node.js e Express. Atualmente implementa operações CRUD completas e está integrada com o Supabase para armazenamento de dados. O frontend em React será desenvolvido futuramente.
+Este é um projeto Full Stack que implementa um sistema de cadastro e gerenciamento de items com operações CRUD completas:
 
 - **Backend**: API REST desenvolvida com Node.js, Express e PostgreSQL
 
-- **Frontend**: Interface moderna desenvolvida com React e Vite## 🛠️ Tecnologias Utilizadas
+- **Frontend**: Interface moderna desenvolvida com React e Vite## 🚀 Sobre o Projeto## 🚀 Sobre o Projeto
 
 - **Banco de Dados**: PostgreSQL hospedado no Supabase
 
+
+
+O projeto está sendo desenvolvido de forma incremental e será aprimorado futuramente com mais funcionalidades e regras de negócio específicas.
+
+Este é um projeto Full Stack que implementa um sistema de cadastro de alunos (CRUD) com:Este projeto é uma API RESTful para gerenciamento de cadastro de alunos, desenvolvida com Node.js e Express. Atualmente implementa operações CRUD completas e está integrada com o Supabase para armazenamento de dados. O frontend em React será desenvolvido futuramente.
+
+## 🛠️ Tecnologias Utilizadas
+
+- **Backend**: API REST desenvolvida com Node.js, Express e PostgreSQL
+
 ### Backend
 
-## 🛠️ Tecnologias Utilizadas- **Node.js** - Ambiente de execução JavaScript
+- **Node.js** - Ambiente de execução JavaScript- **Frontend**: Interface moderna desenvolvida com React e Vite## 🛠️ Tecnologias Utilizadas
 
 - **Express** - Framework web para Node.js
 
-### Backend- **PostgreSQL** - Banco de dados relacional
+- **PostgreSQL** - Banco de dados relacional- **Banco de Dados**: PostgreSQL hospedado no Supabase
 
-- **Node.js** - Ambiente de execução JavaScript- **Supabase** - Plataforma de backend como serviço (BaaS)
+- **Supabase** - Plataforma de backend como serviço (BaaS)
 
-- **Express** - Framework web para Node.js- **Sequelize** - ORM para Node.js
+- **Sequelize** - ORM para Node.js### Backend
 
-- **PostgreSQL** - Banco de dados relacional- **dotenv** - Gerenciamento de variáveis de ambiente
+- **dotenv** - Gerenciamento de variáveis de ambiente
 
-- **Supabase** - Plataforma de backend como serviço (BaaS)- **pg** - Driver PostgreSQL para Node.js
+- **pg** - Driver PostgreSQL para Node.js## 🛠️ Tecnologias Utilizadas- **Node.js** - Ambiente de execução JavaScript
 
-- **Sequelize** - ORM para Node.js
 
-- **dotenv** - Gerenciamento de variáveis de ambiente### Ferramentas de Desenvolvimento
 
-- **pg** - Driver PostgreSQL para Node.js- **Nodemon** - Reinicialização automática do servidor
+### Frontend- **Express** - Framework web para Node.js
+
+- **React** - Biblioteca JavaScript para interfaces
+
+- **Vite** - Build tool e dev server### Backend- **PostgreSQL** - Banco de dados relacional
+
+- **Axios** - Cliente HTTP para requisições
+
+- **ESLint** - Linter para qualidade de código- **Node.js** - Ambiente de execução JavaScript- **Supabase** - Plataforma de backend como serviço (BaaS)
+
+
+
+### Ferramentas de Desenvolvimento- **Express** - Framework web para Node.js- **Sequelize** - ORM para Node.js
+
+- **Nodemon** - Reinicialização automática do servidor
+
+- **Concurrently** - Execução simultânea de scripts- **PostgreSQL** - Banco de dados relacional- **dotenv** - Gerenciamento de variáveis de ambiente
 
 - **Thunder Client / Postman** - Testes de API
 
-### Frontend
+- **Supabase** - Plataforma de backend como serviço (BaaS)- **pg** - Driver PostgreSQL para Node.js
 
-- **React** - Biblioteca JavaScript para interfaces## 📋 Pré-requisitos
+## 📋 Pré-requisitos
 
-- **Vite** - Build tool e dev server
+- **Sequelize** - ORM para Node.js
 
-- **Axios** - Cliente HTTP para requisiçõesAntes de começar, você precisará ter instalado em sua máquina:
+Antes de começar, você precisará ter instalado em sua máquina:
 
-- **ESLint** - Linter para qualidade de código
+- **dotenv** - Gerenciamento de variáveis de ambiente### Ferramentas de Desenvolvimento
 
 - [Node.js](https://nodejs.org/) (v14 ou superior)
 
-### Ferramentas de Desenvolvimento- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)- **pg** - Driver PostgreSQL para Node.js- **Nodemon** - Reinicialização automática do servidor
 
-- **Nodemon** - Reinicialização automática do servidor- Conta no [Supabase](https://supabase.com/)
+- Conta no [Supabase](https://supabase.com/)
+
+- **Thunder Client / Postman** - Testes de API
+
+## 🔧 Instalação
+
+### Frontend
+
+1. Clone este repositório:
+
+```bash- **React** - Biblioteca JavaScript para interfaces## 📋 Pré-requisitos
+
+git clone git@github.com:clodomilson-silva/Projeto-Root.git
+
+cd Projeto-Root- **Vite** - Build tool e dev server
+
+```
+
+- **Axios** - Cliente HTTP para requisiçõesAntes de começar, você precisará ter instalado em sua máquina:
+
+2. Instale as dependências de todos os projetos:
+
+```bash- **ESLint** - Linter para qualidade de código
+
+npm run install:all
+
+```- [Node.js](https://nodejs.org/) (v14 ou superior)
+
+
+
+Ou instale manualmente:### Ferramentas de Desenvolvimento- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+```bash
+
+# Dependências da raiz- **Nodemon** - Reinicialização automática do servidor- Conta no [Supabase](https://supabase.com/)
+
+npm install
 
 - **Concurrently** - Execução simultânea de scripts
 
-- **Thunder Client / Postman** - Testes de API## 🔧 Instalação
+# Dependências do backend
+
+cd backend && npm install- **Thunder Client / Postman** - Testes de API## 🔧 Instalação
 
 
 
-## 📋 Pré-requisitos1. Clone este repositório:
+# Dependências do frontend
 
-```bash
+cd ../frontend && npm install
 
-Antes de começar, você precisará ter instalado em sua máquina:git clone git@github.com:clodomilson-silva/Projeto-Root.git
+```## 📋 Pré-requisitos1. Clone este repositório:
 
-cd Projeto-Root
+
+
+3. Configure as variáveis de ambiente do backend:```bash
+
+
+
+Crie um arquivo `.env` na pasta `backend/` com as seguintes variáveis:Antes de começar, você precisará ter instalado em sua máquina:git clone git@github.com:clodomilson-silva/Projeto-Root.git
+
+
+
+```envcd Projeto-Root
+
+PORT=3000
 
 - [Node.js](https://nodejs.org/) (v14 ou superior)```
 
-- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+# Supabase Configuration
+
+SUPABASE_URL=sua_url_do_supabase- [npm](https://www.npmjs.com/) ou [yarn](https://yarnpkg.com/)
+
+SUPABASE_KEY=sua_chave_do_supabase
 
 - Conta no [Supabase](https://supabase.com/)2. Instale as dependências:
 
-```bash
+# PostgreSQL Direct Connection (Supabase)
 
-## 🔧 Instalaçãonpm install
+PGHOST=db.seu_projeto.supabase.co```bash
+
+PGUSER=postgres
+
+PGPASSWORD=sua_senha_do_supabase## 🔧 Instalaçãonpm install
+
+PGDATABASE=postgres
+
+PGPORT=5432```
 
 ```
 
 1. Clone este repositório:
 
+4. Configure o banco de dados no Supabase:
+
 ```bash3. Configure as variáveis de ambiente:
+
+Execute o seguinte SQL no SQL Editor do Supabase:
 
 git clone git@github.com:clodomilson-silva/Projeto-Root.git
 
-cd Projeto-RootCrie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
-
-```
-
-```env
-
-2. Instale as dependências de todos os projetos:PORT=3000
-
-```bash
-
-npm run install:all# Supabase Configuration
-
-```SUPABASE_URL=sua_url_do_supabase
-
-SUPABASE_KEY=sua_chave_do_supabase
-
-Ou instale manualmente:
-
-```bash# PostgreSQL Direct Connection (Supabase)
-
-# Dependências da raizPGHOST=db.seu_projeto.supabase.co
-
-npm installPGUSER=postgres
-
-PGPASSWORD=sua_senha_do_supabase
-
-# Dependências do backendPGDATABASE=postgres
-
-cd backend && npm installPGPORT=5432
-
-```
-
-# Dependências do frontend
-
-cd ../frontend && npm install4. Configure o banco de dados no Supabase:
-
-```
-
-Execute o seguinte SQL no SQL Editor do Supabase:
-
-3. Configure as variáveis de ambiente do backend:
-
 ```sql
 
-Crie um arquivo `.env` na pasta `backend/` com as seguintes variáveis:CREATE TABLE IF NOT EXISTS items (
+CREATE TABLE IF NOT EXISTS items (cd Projeto-RootCrie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
 
     id BIGSERIAL PRIMARY KEY,
 
-```env    name TEXT NOT NULL,
+    name TEXT NOT NULL,```
 
-PORT=3000    description TEXT,
+    description TEXT,
 
-    price NUMERIC(10,2),
+    price NUMERIC(10,2),```env
 
-# Supabase Configuration    created_at TIMESTAMP DEFAULT now()
+    created_at TIMESTAMP DEFAULT now()
 
-SUPABASE_URL=sua_url_do_supabase);
-
-SUPABASE_KEY=sua_chave_do_supabase
-
--- Habilitar Row Level Security (RLS)
-
-# PostgreSQL Direct Connection (Supabase)ALTER TABLE items ENABLE ROW LEVEL SECURITY;
-
-PGHOST=db.seu_projeto.supabase.co
-
-PGUSER=postgres-- Criar política para permitir todas as operações
-
-PGPASSWORD=sua_senha_do_supabaseCREATE POLICY "Enable all operations for all users" ON items
-
-PGDATABASE=postgresFOR ALL
-
-PGPORT=5432USING (true)
-
-```WITH CHECK (true);
-
-```
-
-4. Configure o banco de dados no Supabase:
-
-## 🚀 Como Executar
-
-Execute o seguinte SQL no SQL Editor do Supabase:
-
-### Modo de Desenvolvimento
-
-```sql```bash
-
-CREATE TABLE IF NOT EXISTS items (npm run dev
-
-    id BIGSERIAL PRIMARY KEY,```
-
-    name TEXT NOT NULL,
-
-    description TEXT,### Modo de Produção
-
-    price NUMERIC(10,2),```bash
-
-    created_at TIMESTAMP DEFAULT now()npm start
-
-);```
+);2. Instale as dependências de todos os projetos:PORT=3000
 
 
 
--- Habilitar Row Level Security (RLS)O servidor estará rodando em `http://localhost:3000`
+-- Habilitar Row Level Security (RLS)```bash
 
 ALTER TABLE items ENABLE ROW LEVEL SECURITY;
 
-## 📍 Endpoints da API
+npm run install:all# Supabase Configuration
 
 -- Criar política para permitir todas as operações
 
-CREATE POLICY "Enable all operations for all users" ON items### Base URL
+CREATE POLICY "Enable all operations for all users" ON items```SUPABASE_URL=sua_url_do_supabase
 
-FOR ALL```
+FOR ALL
 
-USING (true)http://localhost:3000/api
+USING (true)SUPABASE_KEY=sua_chave_do_supabase
 
-WITH CHECK (true);```
+WITH CHECK (true);
 
-```
-
-### Rotas Disponíveis
-
-## 🚀 Como Executar
-
-| Método | Endpoint | Descrição |
-
-### Modo de Desenvolvimento (Recomendado)|--------|----------|-----------|
-
-| GET | `/api/items` | Lista todos os itens |
-
-Execute ambos os servidores simultaneamente:| GET | `/api/items/:id` | Busca um item por ID |
-
-```bash| POST | `/api/items` | Cria um novo item |
-
-npm run dev| PUT | `/api/items/:id` | Atualiza um item existente |
-
-```| DELETE | `/api/items/:id` | Remove um item |
+```Ou instale manualmente:
 
 
 
-Este comando inicia:### Exemplos de Requisições
+## 🚀 Como Executar```bash# PostgreSQL Direct Connection (Supabase)
 
-- Backend em `http://localhost:3000`
 
-- Frontend em `http://localhost:5173`#### GET - Listar todos os itens
+
+### Modo de Desenvolvimento (Recomendado)# Dependências da raizPGHOST=db.seu_projeto.supabase.co
+
+
+
+Execute ambos os servidores simultaneamente:npm installPGUSER=postgres
 
 ```bash
 
-### Executar Separadamentecurl http://localhost:3000/api/items
+npm run devPGPASSWORD=sua_senha_do_supabase
 
 ```
 
+# Dependências do backendPGDATABASE=postgres
+
+Este comando inicia:
+
+- Backend em `http://localhost:3000`cd backend && npm installPGPORT=5432
+
+- Frontend em `http://localhost:5173`
+
+```
+
+### Executar Separadamente
+
+# Dependências do frontend
+
 **Backend apenas:**
 
-```bash#### POST - Criar novo item
+```bashcd ../frontend && npm install4. Configure o banco de dados no Supabase:
 
-npm run dev:backend```bash
+npm run dev:backend
 
-```curl -X POST http://localhost:3000/api/items \
+``````
 
-  -H "Content-Type: application/json" \
 
-**Frontend apenas:**  -d '{
 
-```bash    "name": "João Silva",
+**Frontend apenas:**Execute o seguinte SQL no SQL Editor do Supabase:
 
-npm run dev:frontend    "description": "Aluno do curso de Engenharia",
+```bash
 
-```    "price": 1500.00
+npm run dev:frontend3. Configure as variáveis de ambiente do backend:
+
+```
+
+```sql
+
+### Modo de Produção
+
+Crie um arquivo `.env` na pasta `backend/` com as seguintes variáveis:CREATE TABLE IF NOT EXISTS items (
+
+```bash
+
+npm start    id BIGSERIAL PRIMARY KEY,
+
+```
+
+```env    name TEXT NOT NULL,
+
+## 📁 Estrutura do Projeto
+
+PORT=3000    description TEXT,
+
+```
+
+Projeto-Root/    price NUMERIC(10,2),
+
+├── backend/                 # API REST (Node.js + Express)
+
+│   ├── migrations/          # Scripts de migração do banco de dados# Supabase Configuration    created_at TIMESTAMP DEFAULT now()
+
+│   ├── models/              # Models do Sequelize
+
+│   ├── src/SUPABASE_URL=sua_url_do_supabase);
+
+│   │   ├── controllers/     # Controladores da aplicação
+
+│   │   ├── db/              # Configurações de banco de dadosSUPABASE_KEY=sua_chave_do_supabase
+
+│   │   ├── routes/          # Definição das rotas
+
+│   │   └── server.js        # Arquivo principal do servidor-- Habilitar Row Level Security (RLS)
+
+│   ├── .env                 # Variáveis de ambiente (não versionado)
+
+│   └── package.json# PostgreSQL Direct Connection (Supabase)ALTER TABLE items ENABLE ROW LEVEL SECURITY;
+
+│
+
+├── frontend/                # Interface ReactPGHOST=db.seu_projeto.supabase.co
+
+│   ├── public/              # Arquivos estáticos
+
+│   ├── src/PGUSER=postgres-- Criar política para permitir todas as operações
+
+│   │   ├── components/      # Componentes React
+
+│   │   ├── pages/           # Páginas da aplicaçãoPGPASSWORD=sua_senha_do_supabaseCREATE POLICY "Enable all operations for all users" ON items
+
+│   │   ├── services/        # Serviços de integração com API
+
+│   │   ├── App.jsx          # Componente principalPGDATABASE=postgresFOR ALL
+
+│   │   └── main.jsx         # Ponto de entrada
+
+│   ├── index.htmlPGPORT=5432USING (true)
+
+│   ├── vite.config.js       # Configuração do Vite
+
+│   └── package.json```WITH CHECK (true);
+
+│
+
+├── .gitignore```
+
+├── package.json             # Scripts do projeto raiz
+
+└── README.md                # Este arquivo4. Configure o banco de dados no Supabase:
+
+```
+
+## 🚀 Como Executar
+
+## 📍 Endpoints da API
+
+Execute o seguinte SQL no SQL Editor do Supabase:
+
+### Base URL
+
+```### Modo de Desenvolvimento
+
+http://localhost:3000/api
+
+``````sql```bash
+
+
+
+### Rotas DisponíveisCREATE TABLE IF NOT EXISTS items (npm run dev
+
+
+
+| Método | Endpoint | Descrição |    id BIGSERIAL PRIMARY KEY,```
+
+|--------|----------|-----------|
+
+| GET | `/api/items` | Lista todos os itens |    name TEXT NOT NULL,
+
+| GET | `/api/items/:id` | Busca um item por ID |
+
+| POST | `/api/items` | Cria um novo item |    description TEXT,### Modo de Produção
+
+| PUT | `/api/items/:id` | Atualiza um item existente |
+
+| DELETE | `/api/items/:id` | Remove um item |    price NUMERIC(10,2),```bash
+
+
+
+### Exemplos de Requisições    created_at TIMESTAMP DEFAULT now()npm start
+
+
+
+#### GET - Listar todos os itens);```
+
+```bash
+
+curl http://localhost:3000/api/items
+
+```
+
+-- Habilitar Row Level Security (RLS)O servidor estará rodando em `http://localhost:3000`
+
+#### POST - Criar novo item
+
+```bashALTER TABLE items ENABLE ROW LEVEL SECURITY;
+
+curl -X POST http://localhost:3000/api/items \
+
+  -H "Content-Type: application/json" \## 📍 Endpoints da API
+
+  -d '{
+
+    "name": "Notebook Dell",-- Criar política para permitir todas as operações
+
+    "description": "Notebook para desenvolvimento",
+
+    "price": 3500.00CREATE POLICY "Enable all operations for all users" ON items### Base URL
 
   }'
 
-### Modo de Produção```
+```FOR ALL```
 
 
 
-```bash#### PUT - Atualizar item
+#### PUT - Atualizar itemUSING (true)http://localhost:3000/api
 
-npm start```bash
+```bash
 
-```curl -X PUT http://localhost:3000/api/items/1 \
+curl -X PUT http://localhost:3000/api/items/1 \WITH CHECK (true);```
 
   -H "Content-Type: application/json" \
 
-## 📁 Estrutura do Projeto  -d '{
+  -d '{```
 
-    "name": "João Silva Atualizado",
+    "name": "Notebook Dell XPS",
 
-```    "description": "Aluno do curso de Engenharia de Software",
+    "description": "Notebook para desenvolvimento atualizado",### Rotas Disponíveis
 
-Projeto-Root/    "price": 1600.00
+    "price": 4000.00
 
-├── backend/                 # API REST (Node.js + Express)  }'
+  }'## 🚀 Como Executar
 
-│   ├── migrations/          # Scripts de migração do banco de dados```
+```
 
-│   ├── models/              # Models do Sequelize
+| Método | Endpoint | Descrição |
+
+#### DELETE - Remover item
+
+```bash### Modo de Desenvolvimento (Recomendado)|--------|----------|-----------|
+
+curl -X DELETE http://localhost:3000/api/items/1
+
+```| GET | `/api/items` | Lista todos os itens |
+
+
+
+## 🧪 TestesExecute ambos os servidores simultaneamente:| GET | `/api/items/:id` | Busca um item por ID |
+
+
+
+Para testar a conexão com o banco de dados:```bash| POST | `/api/items` | Cria um novo item |
+
+
+
+```bashnpm run dev| PUT | `/api/items/:id` | Atualiza um item existente |
+
+# Testar conexão PostgreSQL
+
+cd backend && node src/testDb.js```| DELETE | `/api/items/:id` | Remove um item |
+
+
+
+# Testar conexão Supabase
+
+cd backend && node src/testSupabase.js
+
+Este comando inicia:### Exemplos de Requisições
+
+# Testar inserção de dados
+
+cd backend && node src/testInsert.js- Backend em `http://localhost:3000`
+
+```
+
+- Frontend em `http://localhost:5173`#### GET - Listar todos os itens
+
+## 📜 Scripts Disponíveis
+
+```bash
+
+Na raiz do projeto:
+
+### Executar Separadamentecurl http://localhost:3000/api/items
+
+- `npm run dev` - Inicia backend e frontend simultaneamente (desenvolvimento)
+
+- `npm run dev:backend` - Inicia apenas o backend```
+
+- `npm run dev:frontend` - Inicia apenas o frontend
+
+- `npm start` - Inicia ambos em modo produção**Backend apenas:**
+
+- `npm run install:all` - Instala todas as dependências
+
+- `npm run build:frontend` - Build do frontend para produção```bash#### POST - Criar novo item
+
+
+
+## 🔐 Segurançanpm run dev:backend```bash
+
+
+
+- As credenciais sensíveis estão armazenadas no arquivo `.env` que não é versionado```curl -X POST http://localhost:3000/api/items \
+
+- O Supabase Row Level Security (RLS) está habilitado para controle de acesso
+
+- CORS configurado para permitir requisições de diferentes origens  -H "Content-Type: application/json" \
+
+
+
+## 🚧 Roadmap**Frontend apenas:**  -d '{
+
+
+
+- [x] Configuração inicial do projeto```bash    "name": "João Silva",
+
+- [x] Implementação da API REST com CRUD completo
+
+- [x] Integração com Supabase/PostgreSQLnpm run dev:frontend    "description": "Aluno do curso de Engenharia",
+
+- [x] Tratamento de erros e validações
+
+- [x] Frontend em React com Vite```    "price": 1500.00
+
+- [x] Interface para CRUD de items
+
+- [x] Configuração para rodar ambos os servidores simultaneamente  }'
+
+- [ ] Implementação de autenticação e autorização
+
+- [ ] Adicionar mais funcionalidades e regras de negócio### Modo de Produção```
+
+- [ ] Testes unitários e de integração
+
+- [ ] Validações avançadas de formulários
+
+- [ ] Paginação e filtros de busca
+
+- [ ] Deploy em produção```bash#### PUT - Atualizar item
+
+- [ ] Docker e Docker Compose
+
+- [ ] CI/CD com GitHub Actionsnpm start```bash
+
+
+
+## 🤝 Contribuindo```curl -X PUT http://localhost:3000/api/items/1 \
+
+
+
+Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues e pull requests.  -H "Content-Type: application/json" \
+
+
+
+## 📝 Licença## 📁 Estrutura do Projeto  -d '{
+
+
+
+Este projeto está sob a licença ISC.    "name": "João Silva Atualizado",
+
+
+
+## 👨‍💻 Autor```    "description": "Aluno do curso de Engenharia de Software",
+
+
+
+**Clodomilson Silva**Projeto-Root/    "price": 1600.00
+
+
+
+- GitHub: [@clodomilson-silva](https://github.com/clodomilson-silva)├── backend/                 # API REST (Node.js + Express)  }'
+
+
+
+---│   ├── migrations/          # Scripts de migração do banco de dados```
+
+
+
+⌨️ Desenvolvido com ❤️ por Clodomilson Silva│   ├── models/              # Models do Sequelize
+
 
 │   ├── src/#### DELETE - Remover item
 
